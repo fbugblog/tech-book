@@ -2,7 +2,17 @@
 title: LangChain & LlamaIndex 応用アプリケーションアーキテクチャ——AIエージェントとRAGの実装パターン
 sidebar_label: この本について・目次
 nav_label: LangChain & LlamaIndex
+description: RAGとAIエージェントを「動くデモ」から「本番に預けられるシステム」へ引き上げるための全5章。チャンク設計・ハイブリッド検索・リランク、構造化出力とツール設計、LangGraphによる状態遷移と人間の承認、非同期とコンテキスト安全性までを扱う。
+status: 本文あり（ドラフト）
 order: 3
+tags:
+  - LangChain
+  - LlamaIndex
+  - RAG
+  - エージェント
+  - LangGraph
+  - LCEL
+  - プロンプトインジェクション
 ---
 
 # LangChain & LlamaIndex 応用アプリケーションアーキテクチャ——AIエージェントとRAGの実装パターン

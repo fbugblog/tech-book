@@ -2,7 +2,15 @@
 title: 生成AI/LLMアプリケーション開発 — 深掘り本 目次案
 sidebar_label: この本について・目次案
 nav_label: 生成AI/LLMアプリ開発
+description: LLMアプリケーション開発を、基礎編・応用編・最前線編の30章で扱う構想。RAG、エージェント、MCP、LLM Observability、そして金融機関のような高ガバナンス領域での実装を見据えた章立て。
+status: 章立てのみ
 order: 2
+tags:
+  - LLM
+  - RAG
+  - エージェント
+  - MCP
+  - 金融
 ---
 
 # 生成AI/LLMアプリケーション開発 — 深掘り本 目次案
