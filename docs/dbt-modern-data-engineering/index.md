@@ -2,7 +2,16 @@
 title: dbtによるモダンデータエンジニアリング — 変換パイプラインのコード化と設計パターン
 sidebar_label: この本について・目次
 nav_label: dbtデータエンジニアリング
+description: SQL中心のデータ変換処理に、テスト・CI/CD・モジュール化というソフトウェアエンジニアリングの作法を持ち込む実務書。Staging/Intermediate/Martsの三層設計、Jinjaとマクロ、データ品質テスト、Slim CIとオーケストレーションまでを全5章で扱う。
+status: 本文あり（ドラフト）
 order: 3
+tags:
+  - dbt
+  - データエンジニアリング
+  - SQL
+  - ELT
+  - データ品質
+  - CI/CD
 ---
 
 # dbtによるモダンデータエンジニアリング — 変換パイプラインのコード化と設計パターン
