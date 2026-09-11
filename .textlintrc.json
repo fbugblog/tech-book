@@ -1,0 +1,42 @@
+{
+  "filters": {
+    "comments": true,
+    "allowlist": {
+      "allow": ["/^:::.*$/m"]
+    }
+  },
+  "rules": {
+    "preset-ja-technical-writing": {
+      "sentence-length": {
+        "max": 200
+      },
+      "max-ten": {
+        "max": 8
+      },
+      "max-comma": {
+        "max": 4
+      },
+      "max-kanji-continuous-len": false,
+      "arabic-kanji-numbers": false,
+      "no-doubled-joshi": false,
+      "no-mix-dearu-desumasu": {
+        "preferInHeader": "",
+        "preferInBody": "である",
+        "preferInList": "",
+        "strict": false
+      },
+      "ja-no-mixed-period": {
+        "allowPeriodMarks": ["：", "？", "！", ":"],
+        "allowEmojiAtEnd": true
+      },
+      "ja-no-successive-word": {
+        "allow": ["一つ", "少し", "様々"]
+      },
+      "no-exclamation-question-mark": false,
+      "ja-no-weak-phrase": false
+    },
+    "prh": {
+      "rulePaths": ["./prh.yml"]
+    }
+  }
+}

@@ -1,0 +1,82 @@
+# 用語の表記ゆれを自動で直すための辞書（textlint-rule-prh）
+# `npm run lint:fix` で expected の表記に置換されます。
+# 本の方針に合わせて自由に追加・削除してください。
+#
+# patterns に文字列を書くとリテラル一致、`/.../` で書くと正規表現になります。
+# URL やコード中の語を誤検知しないよう、単語の前後に境界条件を付けています。
+version: 1
+
+rules:
+  # --- プロダクト名・技術用語 ---
+  - expected: JavaScript
+    patterns:
+      - /(?<![\w./-])javascript(?![\w./-])/i
+    specs:
+      - from: javascript で書く
+        to: JavaScript で書く
+
+  - expected: TypeScript
+    patterns:
+      - /(?<![\w./-])typescript(?![\w./-])/i
+
+  - expected: Node.js
+    patterns:
+      - /(?<![\w./-])node\.?js(?![\w./-])/i
+    specs:
+      - from: nodejs をインストールする
+        to: Node.js をインストールする
+
+  - expected: GitHub
+    patterns:
+      - /(?<![\w./-])github(?![\w./-])/i
+
+  - expected: Docker
+    patterns:
+      - /(?<![\w./-])docker(?![\w./-])/i
+
+  - expected: Python
+    patterns:
+      - /(?<![\w./-])python(?![\w./-])/i
+
+  - expected: HTTP
+    patterns:
+      - /(?<![\w./-])http(?![s\w./:-])/i
+
+  - expected: HTTPS
+    patterns:
+      - /(?<![\w./-])https(?![\w./:-])/i
+
+  - expected: API
+    patterns:
+      - /(?<![\w./-])api(?![\w./-])/i
+
+  # --- カタカナ語の長音（JTF 日本語標準スタイルガイド準拠） ---
+  - expected: サーバー
+    patterns:
+      - /サーバ(?![ーバ])/
+    specs:
+      - from: サーバを再起動する
+        to: サーバーを再起動する
+
+  - expected: ユーザー
+    patterns:
+      - /ユーザ(?!ー)/
+    specs:
+      - from: ユーザが操作する
+        to: ユーザーが操作する
+
+  - expected: ブラウザー
+    patterns:
+      - /ブラウザ(?!ー)/
+
+  # --- ひらがなでひらく表記 ---
+  - expected: ください
+    patterns:
+      - 下さい
+
+  - expected: とおり
+    patterns:
+      - /(?<=の)通り(?![-\w])/
+    specs:
+      - from: 次の通りです
+        to: 次のとおりです

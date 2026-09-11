@@ -1,0 +1,149 @@
+/*
+ * 読み物としての見た目を整えるためのテーマ上書き。
+ * VitePress のデザイントークンを差し替えているだけなので、
+ * ライト / ダークどちらのテーマでも破綻しません。
+ *
+ * 配色は「紙とインク」。ライトは生成り色の紙に藍墨、ダークは夜の紙面に見立てています。
+ */
+
+:root {
+  /* 本文は明朝、見出しは少し太い明朝、ラベルはゴシック */
+  --vp-font-family-base: 'Noto Serif JP', 'Hiragino Mincho ProN', 'Yu Mincho',
+    'YuMincho', serif;
+  --vp-font-family-display: 'Shippori Mincho', 'Hiragino Mincho ProN', 'Yu Mincho', serif;
+  --vp-font-family-mono: 'SFMono-Regular', Menlo, Consolas, 'Roboto Mono',
+    'Noto Sans Mono CJK JP', monospace;
+
+  /* 紙とインク（ライト） */
+  --vp-c-bg: #f2f0e6;
+  --vp-c-bg-alt: #e9e5d6;
+  --vp-c-bg-soft: #ebe8dc;
+  --vp-c-bg-elv: #f7f5ee;
+
+  --vp-c-text-1: #1b2a41;
+  --vp-c-text-2: #4b5a70;
+  --vp-c-text-3: #7d8391;
+
+  --vp-c-divider: #cfcabb;
+  --vp-c-border: #cfcabb;
+  --vp-c-gutter: #cfcabb;
+
+  --vp-c-brand-1: #96411b;
+  --vp-c-brand-2: #7d3616;
+  --vp-c-brand-3: #96411b;
+  --vp-c-brand-soft: rgba(150, 65, 27, 0.12);
+
+  /* 「この章のポイント」などの注記ブロックは第二アクセント（藍緑）で */
+  --vp-c-tip-1: #1b6055;
+  --vp-c-tip-2: #17544a;
+  --vp-c-tip-3: #1b6055;
+  --vp-c-tip-soft: rgba(27, 96, 85, 0.12);
+
+  /* 本文の測り幅。日本語は1行40〜45文字前後が読みやすい */
+  --vp-layout-max-width: 1440px;
+  --book-content-width: 44rem;
+}
+
+/* 夜の紙面（ダーク） */
+.dark {
+  --vp-c-bg: #16202c;
+  --vp-c-bg-alt: #111a24;
+  --vp-c-bg-soft: #1d2937;
+  --vp-c-bg-elv: #1d2937;
+
+  --vp-c-text-1: #ece7d9;
+  --vp-c-text-2: #b3bcc9;
+  --vp-c-text-3: #8a93a2;
+
+  --vp-c-divider: #2c3b4e;
+  --vp-c-border: #2c3b4e;
+  --vp-c-gutter: #2c3b4e;
+
+  --vp-c-brand-1: #e4906a;
+  --vp-c-brand-2: #eda583;
+  --vp-c-brand-3: #c2663a;
+  --vp-c-brand-soft: rgba(228, 144, 106, 0.16);
+
+  --vp-c-tip-1: #6fbdae;
+  --vp-c-tip-2: #8acdc0;
+  --vp-c-tip-3: #3f8d7e;
+  --vp-c-tip-soft: rgba(111, 189, 174, 0.16);
+}
+
+/* 見出しは明朝で、字間を少し詰める */
+.vp-doc h1,
+.vp-doc h2,
+.vp-doc h3,
+.VPHero .name,
+.VPHero .text,
+.VPFeature .title {
+  font-family: var(--vp-font-family-display);
+  letter-spacing: 0.01em;
+}
+
+/* 本文カラムを読み物向けの幅に、行間はゆったりと */
+.VPDoc .content-container {
+  max-width: var(--book-content-width) !important;
+}
+
+.vp-doc p,
+.vp-doc li {
+  line-height: 2;
+}
+
+.vp-doc h1 {
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.vp-doc h2 {
+  margin-top: 3.5rem;
+  padding-top: 1.5rem;
+  font-size: 1.375rem;
+}
+
+.vp-doc h3 {
+  margin-top: 2.25rem;
+}
+
+/* 引用は「引き」の一文として、罫線を細く色を薄く */
+.vp-doc blockquote {
+  margin: 2rem 0;
+  border-left-width: 2px;
+  border-left-color: var(--vp-c-brand-1);
+  padding-left: 1.25rem;
+}
+
+.vp-doc blockquote > p {
+  font-family: var(--vp-font-family-display);
+  font-size: 1.0625rem;
+  color: var(--vp-c-text-1);
+}
+
+/* 図版とキャプション: ![alt](path) の直後に *キャプション* を置く運用 */
+.vp-doc img {
+  display: block;
+  margin: 1.75rem auto;
+  border-radius: 4px;
+}
+
+.vp-doc img + em {
+  display: block;
+  margin-top: -1rem;
+  margin-bottom: 1.75rem;
+  color: var(--vp-c-text-2);
+  font-size: 0.875rem;
+  font-style: normal;
+  text-align: center;
+}
+
+/* サイドバーと目次はゴシックで、本文と役割を分ける */
+.VPSidebar,
+.VPDocAsideOutline,
+.VPNavBar {
+  font-family: 'Zen Kaku Gothic New', 'Hiragino Sans', 'Noto Sans JP', system-ui, sans-serif;
+}
+
+.vp-doc div[class*='language-'] {
+  margin: 1.5rem 0;
+}
