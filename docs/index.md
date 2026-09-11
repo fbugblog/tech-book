@@ -22,4 +22,8 @@ features:
     details: LLMアプリケーション開発を、基礎編・応用編・最前線編の30章で扱う構想。RAG、エージェント、MCP、LLM Observability、そして金融機関のような高ガバナンス領域での実装を見据えた章立てです。
     link: /llm-app-development/
     linkText: 目次を見る
+  - title: エンタープライズ・データモデリング大全 — 全5章
+    details: サイロ化した基幹データを、分析にもAI/RAGにも耐える構造へ作り替えるための設計技術。Kimballのディメンショナルモデリング、Data Vault 2.0、セマンティックレイヤー、そしてナレッジグラフとGraphRAGまでを5章で扱います。
+    link: /enterprise-data-modeling/
+    linkText: 読み始める
 ---
