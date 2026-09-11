@@ -29,12 +29,12 @@ jobs:
           node-version: 22
           cache: npm
 
+      # 事前に Settings → Pages → Source を GitHub Actions にしておく必要がある
+      # （ワークフローの GITHUB_TOKEN では Pages サイトを新規作成できないため、
+      #  configure-pages の enablement オプションは使えない）
       - name: Configure Pages
         id: pages
         uses: actions/configure-pages@v5
-        with:
-          # Settings で Pages を有効化し忘れていても、初回実行時に有効化する
-          enablement: true
 
       - run: npm ci
 

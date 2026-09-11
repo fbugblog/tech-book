@@ -90,12 +90,11 @@ npm run toc
 
 ## GitHub Pages で公開する
 
-`main` に push すれば `.github/workflows/deploy.yml` が動き、
-`https://<ユーザー名>.github.io/<リポジトリ名>/` に公開されます。ワークフローが初回実行時に
-Pages を有効化するため、事前の設定は不要です。
-
-うまくいかない場合は、リポジトリの **Settings → Pages → Build and deployment → Source** を
-**GitHub Actions** に設定してから、Actions タブでワークフローを再実行してください。
+1. リポジトリの **Settings → Pages → Build and deployment → Source** を **GitHub Actions** にする
+   （初回だけ必要な手動設定。ワークフローの `GITHUB_TOKEN` では Pages サイトを新規作成できないため、
+   これを省くと `Get Pages site failed` でデプロイが失敗する）
+2. `main` に push すると `.github/workflows/deploy.yml` が動き、
+   `https://<ユーザー名>.github.io/<リポジトリ名>/` に公開される
 
 プライベートリポジトリの Pages は GitHub Pro 以上が必要です。無料プランで公開する場合は
 リポジトリを public にしてください。
