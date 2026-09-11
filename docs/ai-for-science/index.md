@@ -2,7 +2,16 @@
 title: AI for Science — 深掘り全30章
 sidebar_label: この本について・目次
 nav_label: AI for Science
+description: 科学研究にAIがどう入り込んでいるのかを、基礎技術・分野別の応用・最前線の課題という三部構成で追った30章。AlphaFold、MatterGen、Aurora、ESM3、A-Lab、AI co-scientistといった実在のシステムを軸に読み解く。
+status: 本文あり（ドラフト）
 order: 1
+tags:
+  - AI for Science
+  - 機械学習
+  - 創薬
+  - 材料科学
+  - 気象
+  - エージェント
 ---
 
 # AI for Science — 深掘り全30章

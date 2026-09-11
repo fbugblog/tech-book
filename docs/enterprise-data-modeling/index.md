@@ -2,7 +2,20 @@
 title: エンタープライズ・データモデリング大全 — 基幹データからAI・LLM基盤への構造化技術
 sidebar_label: この本について・目次
 nav_label: データモデリング大全
+description: サイロ化した基幹データを、分析にもAI/RAGにも耐える構造へ作り替えるための設計技術。Kimballのディメンショナルモデリング、Data Vault 2.0、セマンティックレイヤー、ナレッジグラフとGraphRAGまでを扱う全5章。
+status: 本文あり（ドラフト）
 order: 3
+tags:
+  - データモデリング
+  - データ基盤
+  - DWH
+  - Kimball
+  - Data Vault
+  - セマンティックレイヤー
+  - Text-to-SQL
+  - RAG
+  - ナレッジグラフ
+  - GraphRAG
 ---
 
 # エンタープライズ・データモデリング大全
