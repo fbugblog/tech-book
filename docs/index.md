@@ -22,4 +22,8 @@ features:
     details: LLMアプリケーション開発を、基礎編・応用編・最前線編の30章で扱う構想。RAG、エージェント、MCP、LLM Observability、そして金融機関のような高ガバナンス領域での実装を見据えた章立てです。
     link: /llm-app-development/
     linkText: 目次を見る
+  - title: dbtによるモダンデータエンジニアリング — 全5章
+    details: SQL中心のデータ変換処理に、テスト・CI/CD・モジュール化というソフトウェアエンジニアリングの作法を持ち込む実務書。Staging/Intermediate/Martsの三層設計、Jinjaとマクロ、データ品質テスト、Slim CIとオーケストレーションまでを扱います。
+    link: /dbt-modern-data-engineering/
+    linkText: 読み始める
 ---
