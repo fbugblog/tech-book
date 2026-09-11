@@ -22,4 +22,8 @@ features:
     details: LLMアプリケーション開発を、基礎編・応用編・最前線編の30章で扱う構想。RAG、エージェント、MCP、LLM Observability、そして金融機関のような高ガバナンス領域での実装を見据えた章立てです。
     link: /llm-app-development/
     linkText: 目次を見る
+  - title: LLM / RAGシステムの評価と品質保証 — 全5章
+    details: 非決定的なAIの出力をどう定量評価し、回帰テストとして自動化するか。RAG TriadとRagasのメトリクス、DeepEvalとGitHub Actionsによる回帰テスト、LLM-as-a-Judgeのバイアス制御、トレースとガードレールによる本番運用までを5章で扱います。
+    link: /llm-rag-evaluation/
+    linkText: 読み始める
 ---
