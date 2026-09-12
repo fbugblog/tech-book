@@ -65,6 +65,25 @@ npm run new:page -- ai-for-science/03-frontier agent-safety "エージェント�
 - 画像の直後に `*図1.1 システム構成*` と書くとキャプションとして表示される
 - `alt` テキストは必ず書く
 
+## 図版（Mermaid）
+
+アーキテクチャ図・データフロー図・シーケンス図・状態遷移図は、画像ではなく Mermaid 記法で書く。
+コードフェンスに `mermaid` を指定すると、ビルド時にブラウザー上で描画される
+（`vitepress-plugin-mermaid` を導入済み。設定は `docs/.vitepress/config.mts`）。
+
+````md
+```mermaid
+flowchart LR
+    A[入力] --> B{判定}
+    B -->|Yes| C[処理]
+    B -->|No| D[終了]
+```
+````
+
+- ノードのラベルに `()` や `:` を含めるときは `A["ラベル（注記）"]` のようにダブルクォートで囲む
+- 図は本文の主張を補うものに限る。手順の羅列を図にしても読みやすくならない
+- 図が横に長くなる場合は `flowchart TB` を検討する（スマートフォンでの表示が崩れにくい）
+
 ## 校正（textlint）
 
 ```bash
