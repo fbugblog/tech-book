@@ -13,6 +13,8 @@
 | --- | --- | --- |
 | `docs/ai-for-science/` | AI for Science — 深掘り全30章 | 本文あり（ドラフト） |
 | `docs/llm-app-development/` | 生成AI/LLMアプリケーション開発 — 目次案 | 章立てのみ |
+| `docs/langchain-llamaindex/` | LangChain & LlamaIndex 応用アプリケーションアーキテクチャ — 全5章 | 本文あり（ドラフト） |
+| `docs/llm-rag-evaluation/` | LLM / RAGシステムの評価と品質保証 — 全5章 | 本文あり（ドラフト） |
 | `docs/enterprise-data-modeling/` | エンタープライズ・データモデリング大全 — 全5章 | 本文あり（ドラフト） |
 
 ## セットアップ
@@ -51,6 +53,8 @@ Node.js 20 以降が必要です（`.nvmrc` は 22 を指定しています）�
 │   │   ├── 02-applications/        # 第II部
 │   │   └── 03-frontier/            # 第III部
 │   ├── llm-app-development/        # トピック2
+│   ├── langchain-llamaindex/       # トピック3
+│   ├── llm-rag-evaluation/         # トピック4
 │   ├── public/                     # 図版・ファビコン（/images/... で参照）
 │   └── .vitepress/
 │       ├── config.mts              # サイト設定（タイトル・検索・フォントなど）
@@ -84,6 +88,8 @@ Node.js 20 以降が必要です（`.nvmrc` は 22 を指定しています）�
 | `tags` | タグ絞り込みと検索キーワード |
 
 章数・文字数・最終更新日は自動で算出されます（最終更新日は git の履歴から取得）。
+出典ページや用語集のように章として数えたくないページは、そのページの frontmatter に
+`appendix: true` を書くと、章数には数えず一覧にだけ並びます。
 索引の検索ボックスは、本のタイトル・説明・タグ・**章タイトル**を対象に絞り込みます。
 本文まで検索したい場合はナビの検索（<kbd>Ctrl</kbd> + <kbd>K</kbd>）を使います。
 
