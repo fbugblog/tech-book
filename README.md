@@ -16,7 +16,7 @@
 | `docs/dbt-modern-data-engineering/` | dbtによるモダンデータエンジニアリング — 全5章 | 本文あり（ドラフト） |
 | `docs/langchain-llamaindex/` | LangChain & LlamaIndex 応用アプリケーションアーキテクチャ — 全5章 | 本文あり（ドラフト） |
 | `docs/llm-rag-evaluation/` | LLM / RAGシステムの評価と品質保証 — 全5章 | 本文あり（ドラフト） |
-| `docs/fde-practice/` | フォワードデプロイエンジニア（FDE）実践大全 — 全14章＋付録 | 本文あり（ドラフト） |
+| `docs/enterprise-data-modeling/` | エンタープライズ・データモデリング大全 — 全5章 | 本文あり（ドラフト） |
 
 ## セットアップ
 
