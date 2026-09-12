@@ -70,6 +70,7 @@ AIそのものの初歩的な説明は省いている。一方で、各分野の
   - [第28章 政策・倫理・人材育成——各国のAI for Science戦略比較](/ai-for-science/03-frontier/28-policy-ethics-and-talent)
   - [第29章 最新論文サーベイ——2025〜2026年の重要論文を読み解く](/ai-for-science/03-frontier/29-recent-papers-survey)
   - [第30章 AI for Scienceの未来——「第五の科学」時代の科学者像](/ai-for-science/03-frontier/30-future-of-science)
+- [出典](/ai-for-science/90-sources)
 <!-- TOC:end -->
 
 ::: warning この版について
