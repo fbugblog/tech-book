@@ -56,7 +56,7 @@ function createTopic([slug, title]) {
   fs.writeFileSync(file, topicTemplate(title, order), 'utf8')
 
   console.log(`作成しました: ${rel(file)}`)
-  console.log(`トップページ（docs/index.md）の features にも追記すると、入口から辿れるようになります。`)
+  console.log('トップページの索引には自動で並びます。frontmatter の description / status / tags を埋めてください。')
 }
 
 function createPage([dirArg, slug, title]) {
@@ -104,7 +104,11 @@ function topicTemplate(title, order) {
 title: ${title}
 sidebar_label: この本について・目次
 nav_label: ${title}
+description: （トップページの索引に出る一文。省略すると本文の最初の段落が使われる）
+status: 執筆中
 order: ${order}
+tags:
+  - （検索とタグ絞り込みに使うキーワード）
 ---
 
 # ${title}
