@@ -13,8 +13,10 @@
 | --- | --- | --- |
 | `docs/ai-for-science/` | AI for Science — 深掘り全30章 | 本文あり（ドラフト） |
 | `docs/llm-app-development/` | 生成AI/LLMアプリケーション開発 — 目次案 | 章立てのみ |
+| `docs/dbt-modern-data-engineering/` | dbtによるモダンデータエンジニアリング — 全5章 | 本文あり（ドラフト） |
 | `docs/langchain-llamaindex/` | LangChain & LlamaIndex 応用アプリケーションアーキテクチャ — 全5章 | 本文あり（ドラフト） |
 | `docs/llm-rag-evaluation/` | LLM / RAGシステムの評価と品質保証 — 全5章 | 本文あり（ドラフト） |
+| `docs/fde-practice/` | フォワードデプロイエンジニア（FDE）実践大全 — 全14章＋付録 | 本文あり（ドラフト） |
 | `docs/enterprise-data-modeling/` | エンタープライズ・データモデリング大全 — 全5章 | 本文あり（ドラフト） |
 
 ## セットアップ
@@ -55,6 +57,7 @@ Node.js 20 以降が必要です（`.nvmrc` は 22 を指定しています）�
 │   ├── llm-app-development/        # トピック2
 │   ├── langchain-llamaindex/       # トピック3
 │   ├── llm-rag-evaluation/         # トピック4
+│   ├── fde-practice/               # トピック5（第I部〜第VI部＋付録）
 │   ├── public/                     # 図版・ファビコン（/images/... で参照）
 │   └── .vitepress/
 │       ├── config.mts              # サイト設定（タイトル・検索・フォントなど）

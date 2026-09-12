@@ -4,7 +4,7 @@ sidebar_label: この本について・目次
 nav_label: データモデリング大全
 description: サイロ化した基幹データを、分析にもAI/RAGにも耐える構造へ作り替えるための設計技術。Kimballのディメンショナルモデリング、Data Vault 2.0、セマンティックレイヤー、ナレッジグラフとGraphRAGまでを扱う全5章。
 status: 本文あり（ドラフト）
-order: 5
+order: 6
 tags:
   - データモデリング
   - データ基盤
