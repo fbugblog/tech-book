@@ -4,7 +4,7 @@ sidebar_label: この本について・目次
 nav_label: LLM/RAG評価と品質保証
 description: 非決定的なLLMの出力を定量評価し、回帰テストと継続的改善につなげる評価パイプラインの組み立て方。RAG TriadとRagasのメトリクス、DeepEvalとGitHub Actionsによる回帰テスト、LLM-as-a-Judgeのバイアス制御、トレースとガードレールによる本番運用までを五章で扱う。
 status: 本文あり（ドラフト）
-order: 3
+order: 4
 tags:
   - LLM
   - RAG
