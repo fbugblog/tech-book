@@ -13,6 +13,7 @@
 | --- | --- | --- |
 | `docs/ai-for-science/` | AI for Science — 深掘り全30章 | 本文あり（ドラフト） |
 | `docs/llm-app-development/` | 生成AI/LLMアプリケーション開発 — 目次案 | 章立てのみ |
+| `docs/dbt-modern-data-engineering/` | dbtによるモダンデータエンジニアリング — 全5章 | 本文あり（ドラフト） |
 | `docs/langchain-llamaindex/` | LangChain & LlamaIndex 応用アプリケーションアーキテクチャ — 全5章 | 本文あり（ドラフト） |
 | `docs/llm-rag-evaluation/` | LLM / RAGシステムの評価と品質保証 — 全5章 | 本文あり（ドラフト） |
 | `docs/fde-practice/` | フォワードデプロイエンジニア（FDE）実践大全 — 全14章＋付録 | 本文あり（ドラフト） |
