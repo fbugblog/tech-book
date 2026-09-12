@@ -82,7 +82,8 @@ function formatDate(iso: string | null): string | null {
 }
 
 function chapterCount(book: Book): string {
-  return book.chapters.length > 0 ? `全${book.chapters.length}章` : '章立てのみ'
+  const chapters = book.chapters.filter((chapter) => !chapter.appendix).length
+  return chapters > 0 ? `全${chapters}章` : '章立てのみ'
 }
 </script>
 

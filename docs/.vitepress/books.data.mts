@@ -25,12 +25,16 @@ import {
  *   status      「本文あり（ドラフト）」など、書き進み具合を示すラベル
  *   tags        検索とタグ絞り込みに使うキーワード
  *   order       索引とナビでの並び順
+ *
+ * 個々のページ側では `appendix: true` を付けると、章数に数えずに一覧へ並べる。
  */
 
 export type BookChapter = {
   title: string
   group: string | null
   link: string
+  /** 出典や用語集のような付録。章数には数えないが一覧には並べる */
+  appendix: boolean
 }
 
 export type Book = {
@@ -100,11 +104,13 @@ function collectChapters(docsDir: string, slug: string): BookChapter[] {
         const rel = path.join(relDir, entry.name)
 
         if (entry.isFile()) {
+          const file = path.join(docsDir, rel)
           return [
             {
-              title: titleOf(path.join(docsDir, rel), entry.name),
+              title: titleOf(file, entry.name),
               group,
               link: `/${rel.split(path.sep).join('/').replace(/\.md$/, '')}`,
+              appendix: scalar(readPage(file).frontmatter, 'appendix') === 'true',
             },
           ]
         }
